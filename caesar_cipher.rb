@@ -56,8 +56,7 @@ def cipher_word(word, shift_factor)
 end
 
 def replace_character(character, shift_factor)
-    alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
-                "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    alphabet = ("a".."z").to_a
     upcase_character = upcase?(character)
 
     character.downcase! if upcase_character
